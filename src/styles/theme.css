@@ -1,0 +1,44 @@
+/* Warak design system tokens */
+@layer theme {
+  :root {
+    --color-background: #08070D;
+    --color-surface: rgba(255, 255, 255, 0.04);
+    --color-foreground: #F4F2FB;
+    --color-muted: #8F8BA8;
+    --color-border: rgba(255, 255, 255, 0.09);
+    --color-border-strong: rgba(255, 255, 255, 0.18);
+    --color-primary: #C9B8FF;
+    --color-on-primary: #1A1033;
+    --color-destructive: #F472B6;
+    --color-success: #5EEAD4;
+    --color-warning: #FBBF24;
+  }
+
+  :root {
+    @variant dark {
+      --color-background: #08070D;
+      --color-surface: rgba(255, 255, 255, 0.04);
+      --color-foreground: #F4F2FB;
+      --color-muted: #8F8BA8;
+      --color-border: rgba(255, 255, 255, 0.09);
+      --color-border-strong: rgba(255, 255, 255, 0.18);
+      --color-primary: #C9B8FF;
+      --color-on-primary: #1A1033;
+      --color-destructive: #F472B6;
+      --color-success: #5EEAD4;
+      --color-warning: #FBBF24;
+    }
+  }
+
+  :root {
+    @variant ios {
+      --font-mono: Menlo;
+    }
+  }
+
+  :root {
+    @variant android {
+      --font-mono: monospace;
+    }
+  }
+}

@@ -4,84 +4,49 @@
 @import "tw-animate-css"; 
 
 @theme {
-  --radius: 10px;
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius: 18px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 20px;
+  --radius-pill: 9999px;
+
+  --color-warak-bg: #08070D;
+  --color-warak-surface: rgba(255, 255, 255, 0.04);
+  --color-warak-surface-light: rgba(255, 255, 255, 0.07);
+  --color-warak-line: rgba(255, 255, 255, 0.09);
+  --color-warak-ink: #F4F2FB;
+  --color-warak-ink2: #B9B5CE;
+  --color-warak-ink3: #8F8BA8;
+  --color-warak-lavender: #C9B8FF;
+  --color-warak-violet: #7C5CFF;
+  --color-warak-onaccent: #1A1033;
+  --color-warak-like: #F472B6;
+  --color-warak-note: #FBBF24;
+  --color-warak-online: #5EEAD4;
 
   --spacing-hairline: hairlineWidth();
 }
 
 @layer theme {
   :root {
-    @variant light {
-    --color-background:  oklch(1 0 0);
-    --color-foreground:  oklch(0.145 0 0);
-    --color-card:  oklch(1 0 0);
-    --color-card-foreground:  oklch(0.145 0 0);
-    --color-popover:  oklch(1 0 0);
-    --color-popover-foreground:  oklch(0.145 0 0);
-    --color-primary:  oklch(0.205 0 0);
-    --color-primary-foreground:  oklch(0.985 0 0);
-    --color-secondary:  oklch(0.97 0 0);
-    --color-secondary-foreground:  oklch(0.205 0 0);
-    --color-muted:  oklch(0.97 0 0);
-    --color-muted-foreground:  oklch(0.556 0 0);
-    --color-accent:  oklch(0.97 0 0);
-    --color-accent-foreground:  oklch(0.205 0 0);
-    --color-destructive:  oklch(0.577 0.245 27.325);
-    --color-border:  oklch(0.922 0 0);
-    --color-input:  oklch(0.922 0 0);
-    --color-ring:  oklch(0.708 0 0);
-    --color-chart-1:  oklch(0.646 0.222 41.116);
-    --color-chart-2:  oklch(0.6 0.118 184.704);
-    --color-chart-3:  oklch(0.398 0.07 227.392);
-    --color-chart-4:  oklch(0.828 0.189 84.429);
-    --color-chart-5:  oklch(0.769 0.188 70.08);
-    --color-sidebar:  oklch(0.985 0 0);
-    --color-sidebar-foreground:  oklch(0.145 0 0);
-    --color-sidebar-primary:  oklch(0.205 0 0);
-    --color-sidebar-primary-foreground:  oklch(0.985 0 0);
-    --color-sidebar-accent:  oklch(0.97 0 0);
-    --color-sidebar-accent-foreground:  oklch(0.205 0 0);
-    --color-sidebar-border:  oklch(0.922 0 0);
-    --color-sidebar-ring:  oklch(0.708 0 0);
-    }
-
-    @variant dark {
-      --color-background:  oklch(0.145 0 0);
-      --color-foreground:  oklch(0.985 0 0);
-      --color-card:  oklch(0.205 0 0);
-      --color-card-foreground:  oklch(0.985 0 0);
-      --color-popover:  oklch(0.205 0 0);
-      --color-popover-foreground:  oklch(0.985 0 0);
-      --color-primary:  oklch(0.922 0 0);
-      --color-primary-foreground:  oklch(0.205 0 0);
-      --color-secondary:  oklch(0.269 0 0);
-      --color-secondary-foreground:  oklch(0.985 0 0);
-      --color-muted:  oklch(0.269 0 0);
-      --color-muted-foreground:  oklch(0.708 0 0);
-      --color-accent:  oklch(0.269 0 0);
-      --color-accent-foreground:  oklch(0.985 0 0);
-      --color-destructive:  oklch(0.704 0.191 22.216);
-      --color-border:  oklch(1 0 0 / 10%);
-      --color-input:  oklch(1 0 0 / 15%);
-      --color-ring:  oklch(0.556 0 0);
-      --color-chart-1:  oklch(0.488 0.243 264.376);
-      --color-chart-2:  oklch(0.696 0.17 162.48);
-      --color-chart-3:  oklch(0.769 0.188 70.08);
-      --color-chart-4:  oklch(0.627 0.265 303.9);
-      --color-chart-5:  oklch(0.645 0.246 16.439);
-      --color-sidebar:  oklch(0.205 0 0);
-      --color-sidebar-foreground:  oklch(0.985 0 0);
-      --color-sidebar-primary:  oklch(0.488 0.243 264.376);
-      --color-sidebar-primary-foreground:  oklch(0.985 0 0);
-      --color-sidebar-accent:  oklch(0.269 0 0);
-      --color-sidebar-accent-foreground:  oklch(0.985 0 0);
-      --color-sidebar-border:  oklch(1 0 0 / 10%);
-      --color-sidebar-ring:  oklch(0.556 0 0);
-    }
+    --color-background: #08070D;
+    --color-foreground: #F4F2FB;
+    --color-card: rgba(255, 255, 255, 0.04);
+    --color-card-foreground: #F4F2FB;
+    --color-popover: #08070D;
+    --color-popover-foreground: #F4F2FB;
+    --color-primary: #C9B8FF;
+    --color-primary-foreground: #1A1033;
+    --color-secondary: rgba(255, 255, 255, 0.04);
+    --color-secondary-foreground: #F4F2FB;
+    --color-muted: rgba(255, 255, 255, 0.07);
+    --color-muted-foreground: #B9B5CE;
+    --color-accent: #7C5CFF;
+    --color-accent-foreground: #1A1033;
+    --color-destructive: #F472B6;
+    --color-border: rgba(255, 255, 255, 0.09);
+    --color-input: rgba(255, 255, 255, 0.09);
+    --color-ring: #C9B8FF;
   }
 }
-
